@@ -1,0 +1,32 @@
+# Doxir IR database manifest scaffold.
+schema_version: 1
+database: doxir-db
+dsl: doxir
+description: Intermediate-representation definitions for DoxTk.
+status: scaffold
+definitions:
+  - file: AsciiDocAST.doxir
+    name: AsciiDocAST
+    status: scaffold
+  - file: DOM.doxir
+    name: DOM
+    status: scaffold
+  - file: MDAST.doxir
+    name: MDAST
+    status: scaffold
+  - file: PandocAST.doxir
+    name: PandocAST
+    status: scaffold
+  - file: Plaintext.doxir
+    name: Plaintext
+    status: scaffold
+  - file: SVGDOM.doxir
+    name: SVGDOM
+    status: scaffold
+  - file: XMLInfoset.doxir
+    name: XMLInfoset
+    status: scaffold
+notes:
+  - All .doxir files are metadata placeholders pending confirmation of canonical Doxir syntax.
+  - Add every definition to this manifest as it is introduced.
+  - Keep names and file paths case-sensitive.

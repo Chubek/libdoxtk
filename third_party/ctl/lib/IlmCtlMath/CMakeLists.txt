@@ -1,0 +1,45 @@
+set(SOURCES
+	CtlColorSpace.cpp
+	CtlLookupTable.cpp
+	CtlRbfInterpolator.cpp
+)
+
+add_library(IlmCtlMath ${SOURCES})
+
+target_include_directories(IlmCtlMath
+	PUBLIC
+		${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+target_link_libraries (IlmCtlMath
+	PUBLIC
+		IlmCtl
+    PRIVATE
+        # For OpenEXR/Imath 3.x:
+          $<$<TARGET_EXISTS:OpenEXR::OpenEXR>:OpenEXR::OpenEXR>
+          $<$<TARGET_EXISTS:Imath::Imath>:Imath::Imath>
+          $<$<TARGET_EXISTS:Imath::Half>:Imath::Half>
+        # For OpenEXR 2.4/2.5:
+          $<$<TARGET_EXISTS:OpenEXR::IlmImf>:OpenEXR::IlmImf>
+          $<$<TARGET_EXISTS:IlmBase::Imath>:IlmBase::Imath>
+          $<$<TARGET_EXISTS:IlmBase::Half>:IlmBase::Half>
+          $<$<TARGET_EXISTS:IlmBase::IlmThread>:IlmBase::IlmThread>
+          $<$<TARGET_EXISTS:IlmBase::Iex>:IlmBase::Iex>
+    )
+
+set_target_properties(IlmCtlMath
+	PROPERTIES
+		VERSION "${CTL_VERSION}"
+		SOVERSION "${CTL_VERSION_MAJOR}.${CTL_VERSION_MINOR}"
+)
+
+install(FILES
+	CtlColorSpace.h
+	CtlLookupTable.h
+	CtlRbfInterpolator.h
+	CtlSparseMatrix.h
+DESTINATION
+	${CMAKE_INSTALL_INCLUDEDIR}/CTL
+)
+
+install(TARGETS IlmCtlMath DESTINATION ${CMAKE_INSTALL_LIBDIR})
