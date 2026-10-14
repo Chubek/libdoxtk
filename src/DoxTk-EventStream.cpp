@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-EventStream.hpp"
+#include "doxtk/DoxTkEventStream.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Streaming document events.

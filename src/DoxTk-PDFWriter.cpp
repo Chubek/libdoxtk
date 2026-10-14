@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-PDFWriter.hpp"
+#include "doxtk/DoxTkPDFWriter.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Optional PDF output integration.

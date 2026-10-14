@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-.hpp"
+#include "doxtk/DoxTk.hpp"
 #include <fstream>
 #include <iterator>
 

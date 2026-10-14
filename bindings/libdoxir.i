@@ -4,7 +4,7 @@
  */
 %module doxir
 %{
-#include "doxtk/DoxTk-.hpp"
+#include "doxtk/DoxTk.hpp"
 %}
 
 /* TODO: expose selected stable value types and functions after binding

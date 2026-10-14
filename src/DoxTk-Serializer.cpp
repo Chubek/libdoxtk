@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Serializer.hpp"
+#include "doxtk/DoxTkSerializer.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement IR serialization interfaces.

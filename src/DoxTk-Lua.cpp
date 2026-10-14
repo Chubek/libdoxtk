@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Lua.hpp"
+#include "doxtk/DoxTkLua.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Optional Lua runtime integration.

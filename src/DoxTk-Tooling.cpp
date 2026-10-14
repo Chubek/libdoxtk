@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Tooling.hpp"
+#include "doxtk/DoxTkTooling.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Registries and shared toolchain utilities.

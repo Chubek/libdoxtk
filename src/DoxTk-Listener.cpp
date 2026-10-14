@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Listener.hpp"
+#include "doxtk/DoxTkListener.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Parser/compiler diagnostics and events.

@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Parser.hpp"
+#include "doxtk/DoxTkParser.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Parsing interfaces and parse diagnostics.

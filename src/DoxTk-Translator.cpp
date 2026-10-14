@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Translator.hpp"
+#include "doxtk/DoxTkTranslator.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement IR-to-IR translation interfaces.

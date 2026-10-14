@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Encoding.hpp"
+#include "doxtk/DoxTkEncoding.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Encoding detection and transcoding.

@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Txtfile.hpp"
+#include "doxtk/DoxTkTxtfile.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Text file helpers.

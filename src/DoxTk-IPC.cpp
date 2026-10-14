@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-IPC.hpp"
+#include "doxtk/DoxTkIPC.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Inter-process communication abstractions.

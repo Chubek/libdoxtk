@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Driver.hpp"
+#include "doxtk/DoxTkDriver.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement High-level conversion orchestration.

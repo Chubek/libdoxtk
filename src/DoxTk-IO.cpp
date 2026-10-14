@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-IO.hpp"
+#include "doxtk/DoxTkIO.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Binary-safe file I/O.

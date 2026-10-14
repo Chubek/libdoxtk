@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Binfile.hpp"
+#include "doxtk/DoxTkBinfile.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Binary container helpers.

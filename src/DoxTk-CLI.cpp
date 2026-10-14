@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-CLI.hpp"
+#include "doxtk/DoxTkCLI.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Reusable command-line argument handling.

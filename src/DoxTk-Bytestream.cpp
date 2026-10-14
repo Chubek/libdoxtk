@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Bytestream.hpp"
+#include "doxtk/DoxTkBytestream.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Byte-oriented input and output helpers.

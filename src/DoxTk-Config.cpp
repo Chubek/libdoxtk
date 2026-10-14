@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-Config.hpp"
+#include "doxtk/DoxTkConfig.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Configuration values and loading.

@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-AST.hpp"
+#include "doxtk/DoxTkAST.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement AST node model and tree traversal.
