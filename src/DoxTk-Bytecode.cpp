@@ -1,4 +1,4 @@
-#include "doxtk/DoxTkBytecode.hpp"
+#include "doxtk/DoxTk-Bytecode.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Compiled representation for Doxir tooling.

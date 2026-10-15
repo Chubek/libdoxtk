@@ -1,4 +1,4 @@
-#include "doxtk/DoxTkXML.hpp"
+#include "doxtk/DoxTk-XML.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Optional XML helpers.

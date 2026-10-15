@@ -1,4 +1,4 @@
-#include "doxtk/DoxTk-.hpp"
+#include "doxtk/DoxTk.hpp"
 #include <iostream>
 #include <string_view>
 

@@ -1,4 +1,4 @@
-#include "doxtk/DoxTkDeserializer.hpp"
+#include "doxtk/DoxTk-Deserializer.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Decode serialized IR documents.

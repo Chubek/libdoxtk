@@ -1,4 +1,4 @@
-#include "doxtk/DoxTkVisitor.hpp"
+#include "doxtk/DoxTk-Visitor.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Visitor patterns for ASTs.

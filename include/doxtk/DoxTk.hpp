@@ -1,6 +1,7 @@
 #pragma once
 #include <cstddef>
 #include <filesystem>
+#include <memory>
 #include <optional>
 #include <span>
 #include <string>
@@ -29,13 +30,19 @@ template<class T>
 struct Result {
     std::optional<T> value;
     Error error;
+    std::vector<std::string> diagnostics;
     [[nodiscard]] bool has_value() const noexcept { return value.has_value() && !error; }
     [[nodiscard]] explicit operator bool() const noexcept { return has_value(); }
-    static Result success(T v) { return {std::move(v), {}}; }
+    static Result success(T v, std::vector<std::string> diagnostics = {}) {
+        return {std::move(v), {}, std::move(diagnostics)};
+    }
     static Result failure(ErrorCode c, std::string m, std::string ctx = {}) {
-        return {std::nullopt, {c, std::move(m), std::move(ctx)}};
+        return {std::nullopt, {c, std::move(m), std::move(ctx)}, {}};
     }
 };
+
+// Structured IRs may carry an immutable tree alongside their decoded source.
+struct Node;
 
 struct Document {
     std::string ir;
@@ -43,6 +50,7 @@ struct Document {
     std::string encoding{"utf-8"};
     std::vector<std::byte> data;
     std::unordered_map<std::string, std::string> metadata;
+    std::shared_ptr<const Node> tree;
 };
 
 struct ConvertOptions {
@@ -50,6 +58,7 @@ struct ConvertOptions {
     bool allow_lossy{false};
     std::string source_format;
     std::string target_format;
+    std::string source_encoding{"utf-8"};
 };
 
 class Translator {

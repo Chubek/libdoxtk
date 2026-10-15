@@ -1,4 +1,4 @@
-#include "doxtk/DoxTkSpecFile.hpp"
+#include "doxtk/DoxTk-SpecFile.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Format and IR specification files.

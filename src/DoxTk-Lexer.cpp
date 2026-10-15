@@ -1,4 +1,4 @@
-#include "doxtk/DoxTkLexer.hpp"
+#include "doxtk/DoxTk-Lexer.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Lexical analysis for Doxir and format grammars.

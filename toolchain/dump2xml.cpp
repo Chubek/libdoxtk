@@ -1,17 +1,5 @@
-#include "doxtk/DoxTk-.hpp"
-#include <iostream>
-#include <string_view>
+#include "doxtk/DoxTk-CLI.hpp"
 
 int main(int argc, char** argv) {
-    constexpr std::string_view name = "dump2xml";
-    if (argc > 1 && (std::string_view(argv[1]) == "--help" ||
-                     std::string_view(argv[1]) == "-h")) {
-        std::cout << name << " — DoxTk document tool (scaffold)\n"
-                  << "Usage: " << name << " [options] INPUT [OUTPUT]\n"
-                  << "Conversion backend is not implemented yet.\n";
-        return 0;
-    }
-    std::cerr << name << ": conversion backend is not implemented yet; "
-              << "use --help for usage.\n";
-    return 2;
+    return doxtk::run_conversion_cli(argc, argv, "dump2xml", "xml-dump");
 }

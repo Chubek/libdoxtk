@@ -1,4 +1,4 @@
-#include "doxtk/DoxTkCompiler.hpp"
+#include "doxtk/DoxTk-Compiler.hpp"
 
 namespace doxtk {
 // TODO(implementation): implement Compilation pipeline for Doxir definitions.
